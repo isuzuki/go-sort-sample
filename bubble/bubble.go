@@ -19,7 +19,7 @@ func sort(ns []int) []int {
 
 	for i := 0; i < len; i++ {
 		sorted := false
-		for j := 0; j < len-1; j++ {
+		for j := 0; j < len-1-i; j++ {
 			if ns[j] > ns[j+1] {
 				ns[j], ns[j+1] = ns[j+1], ns[j]
 				sorted = true
